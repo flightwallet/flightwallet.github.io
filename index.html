@@ -1,79 +1,267 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-  <link rel="icon" href="images/icon1.ico">
-  <title>flight.wallet</title>
-  <meta charset="utf-8" />
+    <title>flight.wallet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Flight wallet - send crypto without internet with a lot of security">
+    <meta name="keywords" content="Wallet, Cryptocurrency, Bitcoin, Ethereum, Cryptography, send transaction, receive crypto">
 
-  <!-- Yandex.Metrika counter -->
-  <script type="text/javascript">
-    (function(d, w, c) {
-      (w[c] = w[c] || []).push(function() {
-        try {
-          w.yaCounter50897126 = new Ya.Metrika2({
-            id: 50897126,
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true
-          });
-        } catch (e) {}
-      });
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
 
-      var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function() {
-          n.parentNode.insertBefore(s, n);
-        };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = "https://mc.yandex.ru/metrika/tag.js";
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link href="css/style.css" rel="stylesheet">
 
-      if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-      } else {
-        f();
-      }
-    })(document, window, "yandex_metrika_callbacks2");
-  </script>
-  <noscript><div><img src="https://mc.yandex.ru/watch/50897126" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-  <!-- /Yandex.Metrika counter -->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+            w.yaCounter50897126 = new Ya.Metrika2({
+                id: 50897126,
+                clickmap: true,
+                trackLinks: true,
+                accurateTrackBounce: true,
+                webvisor: true
+            });
+            } catch (e) {}
+        });
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function() {
+            n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/50897126" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 </head>
 
-<body class="is-preload">
-  <!-- Header -->
-  <header id="header">
-    <div class="content">
-      <h1><a href="http://github.com/flightwallet">flight.wallet</a></h1>
-      <p><a href="http://github.com/flightwallet">Open source</a> cold storage solution
-        <br>Try it now!</p>
-      <ul class="actions">
-        <li><a target="_blank" href="https://testflight.apple.com/join/9MYul0d7" class="button primary icon fa-download">Sign for iOS Beta</a></li>
-        <!-- <li><a target="_blank" href="https://github.com/flightwallet/ios" class="button primary icon fa-download">iOS app sources</a></li> -->
-        <!-- <li><a target="_blank" href="https://playmarket.com/" class="button primary icon fa-download">Android</a></li> -->
-        <li><a target="_blank" href="https://flightwallet.org/kassa" class="button primary">Pay with app</a></li>
-      </ul>
-      <ul class="actions">
-        <li><a target="_blank" href="https://github.com/flightwallet/ios/" class="button icon">iOS app sources</a></li>
-        <li><a target="_blank" href="https://devpost.com/software/flight-wallet/" class="button icon">Learn more</a></li>
-      </ul>
+<body data-spy="scroll" data-target="#navbar" data-offset="30">
+
+    <!-- Nav Menu -->
+
+    <!-- <div class="nav-menu fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-dark navbar-expand-lg">
+                        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item"> <a class="nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#features">FEATURES</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#gallery">GALLERY</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#pricing">PRICING</a> </li>
+                                <li class="nav-item"> <a class="nav-link" href="#contact">CONTACT</a> </li>
+                                <li class="nav-item"><a href="#" class="btn btn-outline-light my-3 my-sm-0 ml-lg-3">JOIN BETA</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <header class="bg-gradient" id="home">
+        <div class="container mt-5">
+            <h1>flight.wallet</h1>
+            <p class="tagline">Send crypto without internet - the greatest security breach </p>
+        </div>
+        <div class="img-holder mt-3"><img src="images/iphonex.png" alt="phone" class="img-fluid"></div>
+    </header>
+
+    <div class="section light-bg" id="How it works">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <ul class="list-unstyled ui-steps">
+                            <li class="media">
+                                <div class="circle-icon mr-4">1</div>
+                                <div class="media-body">
+                                    <h5>Generate invoice in <a href="https://flightwallet.org/kassa">Kassa</a></h5>
+                                    <p>Select the recipient address, currency and the amount to send</p>
+                                </div>
+                            </li>
+                            <li class="media my-4">
+                                <div class="circle-icon mr-4">2</div>
+                                <div class="media-body">
+                                    <h5>Scan QR with app to receive transaction data</h5>
+                                    <p>App will show the transaction details and sign them if you confirm </p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="circle-icon mr-4">3</div>
+                                <div class="media-body">
+                                    <h5>Send back signed transaction</h5>
+                                    <p>Show QR to Kassa which will broadcast the transaction to Blockchain</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/iphonex.png" alt="iphone" class="img-fluid">
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+        <!-- // end .section -->
+
+    <!-- <div class="client-logos my-5">
+        <div class="container text-center">
+            <img src="images/client-logos.png" alt="client logos" class="img-fluid">
+        </div>
+    </div> -->
+
+    <!-- <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Join the Beta</h2>
+                        <p class="mb-4"> </p>
+                        <a href="#" class="btn btn-primary">Read more</a></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div> -->
+    <!-- // end .section -->
+
+    <div class="section " id="features">
+
+
+        <div class="container">
+
+            <div class="section-title">
+                <!-- <small>HIGHLIGHTS</small> -->
+                <h3>Features</h3>
+            </div>
+
+
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-face-smile gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Open Sourced</h4>
+                                    <p class="card-text">Of course, flight.wallet is opensourced. Visit our <a href="https://github.com/flightwallet">GitHub</a> to make your own security audit.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-settings gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">One mnemonic</h4>
+                                    <p class="card-text">We will create all private keys using only one mnemonic. You can restore all wallets in case of device lost.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="card features">
+                        <div class="card-body">
+                            <div class="media">
+                                <span class="ti-lock gradient-fill ti-3x mr-3"></span>
+                                <div class="media-body">
+                                    <h4 class="card-title">Secured</h4>
+                                    <p class="card-text">No data will left your device via Internet. All keys will be encrypted and safe and sound.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="image phone">
-      <div class="inner"><br><br><img src="images/bitcoin.svg" alt="" style="padding: 10px;"><br><br></div>
+
+    <div class="section bg-gradient">
+        <div class="container">
+            <div class="call-to-action">
+
+                <!-- <div class="box-icon"> -->
+                    <!-- <span class="ti-mobile gradient-fill ti-3x"></span> -->
+                    <!-- <img src="images/logo.png" class="img-fluid" alt="logo"> -->
+                <!-- </div> -->
+                <h2>Try it! It just works!</h2>
+                <p class="tagline">For now we sign only Bitcoin testnet transactions. Ethereun is on the way!</p>
+                <div class="my-4">
+
+                    <a href="https://testflight.apple.com/join/9MYul0d7" class="btn btn-light"><img src="images/appleicon.png" alt="icon"> Join Beta</a>
+                    <a href="mailto:danoklopkov@gmail.com" class="btn btn-light"><img src="images/playicon.png" alt="icon"> Become our Android developer</a>
+                </div>
+                <p class="text-primary"><small><i>*Works on iOS 10+, TestFlight is required. Android version will be released if we find the developer. </i></small></p>
+            </div>
+        </div>
+
     </div>
-  </header>
-  <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- // end .section -->
+
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/dualphone.png" alt="dual phone" class="img-fluid">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div>
+                        <h2>Have something to say?</h2>
+                        <p class="mb-4">Just contact us</p>
+                        <a href="mailto:danokhlopkov@gmail.com" class="btn btn-primary">Contact us</a></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <!-- // end .section -->
+
+    <footer class="my-5 text-center">
+        <p class="mb-2"><small>Founded by <a href="https://bykhun.com/">Alex</a> and <a href="https://okhlopkov.com">Dan</a></small></p>
+
+        <small>
+            <a href="https://github.com/flightwallet/" class="m-2">GITHUB</a>
+            <a href="https://devpost.com/software/flight-wallet/" class="m-2">DEVPOST</a>
+            <a href="https://testflight.apple.com/join/9MYul0d7" class="m-2">JOIN BETA</a>
+            <a href="https://flightwallet.org/kassa/" class="m-2">KASSA</a>
+            <a href="mailto:danokhlopkov@gmail.com" class="m-2">CONTACT</a>
+        </small>
+    </footer>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+
 </body>
 
 </html>
